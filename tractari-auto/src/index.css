@@ -22,7 +22,7 @@
 
 header {
   background: var(--color-brand--2);
-  padding: 10px 20px;
+  /* padding: 10px 20px; */
   color: var(--color-dark--3);
   display: flex;
   justify-content: space-between;
@@ -41,17 +41,17 @@ header {
   background-repeat: no-repeat;
   /* width: 100px;
   height: 100px; */
-  margin-top: 25px;
+  margin-top: 10px;
   margin-left: 30px;
-  width: 150px;
-  height: 90px;
+  width: 130px;
+  height: 70px;
 }
 
 .logo {
-  font-size: 24px;
+  font-size: 18px;
   font-weight: bold;
   display: inline-block;
-  margin-left: 17px;
+  margin-left: 25px;
   text-transform: uppercase;
   margin-top: 1px;
 } 
@@ -117,7 +117,7 @@ header {
   height: 3px;
   background-color: #000;
 } */ 
-
+/* 
 .callButton {
   display: inline-block;
   background-color: var(--color-brand--2);
@@ -140,7 +140,46 @@ header {
 .callButton .phoneIcon {
   margin-right: 10px;
   /* margin-top: 500px; */
-  width: 35px;
-  height: 35px;
+  /* width: 35px; */
+  /* height: 35px; */
+/* } */
+
+.callButton, .cont {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none; /* Elimină sublinierea */
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
 }
 
+/* Specific stil pentru butonul de apel */
+.callButton {
+  color: var(--color-dark--3);
+  border: 2px solid #007BFF;
+}
+
+.callButton:hover {
+  color: var(--color-light--4);
+  background-color: #007bff;
+}
+
+.cont {
+  color: var(--color-dark--3);
+  border: 2px solid #25D366;
+}
+
+.cont:hover {
+  color: var(--color-light--4);
+  background-color: #25d366;
+}
+
+.phoneIcon, .whatsappIcon {
+  margin-right: 10px;
+  font-size: 20px;
+}
