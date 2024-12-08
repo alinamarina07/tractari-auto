@@ -2,6 +2,8 @@ import Header  from './Header';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhoneSquare } from '@fortawesome/free-solid-svg-icons';
 import './Acasa.css';
+import Footer from './Footer';
+import Faq from './Faq';
 
 function HomePage(){
     return (
@@ -14,12 +16,6 @@ function HomePage(){
             <h1>Ai nevoie de asistenta rutiera?</h1>
             <h4>Da-ne un telefon si venim in cel mai scurt timp!</h4>
             <a href='./contact' className='call'><FontAwesomeIcon icon={faPhoneSquare} className='phoneIcon' />Contacteaza-ne!</a>
-            {/* <p>Kpy srl va ofera servicii complete de tractari auto, tractari camioane si transport utilaje de constructii, agricole 
-                si echipamente industriale, precum si asistenta rutiera:
-                <li>autovehicule noi, autovehicule neinmatriculate etc</li>
-                <li>autovehicule defecte sau avariate</li>
-                <li>tractare autovehicule la RAR, ITP, dezmembrari auto, programul „Rabla” etc</li>
-            </p> */}
             <div className="container">
         <p>Kpy srl vă oferă servicii complete de tractări auto, tractări camioane și transport utilaje de construcții, agricole 
             și echipamente industriale, precum și asistență rutieră:
@@ -31,7 +27,19 @@ function HomePage(){
         </ul>
     </div>
             </div>
-            </div>
+        </div>
+        <div className='text2'>
+            <h3>Tractari auto super ieftine!</h3>
+            <p>Orientarea catre client a fost mereu o prioritate pentru firma noastra, 
+                de aceea acordam o atentie deosebita cerintelor si nevoilor Dvs. 
+                Vom interveni rapid de fiecare data cand veti avea nevoie de noi si vom 
+                face intodeauna tot posibilul pentru a eficientiza costurile si timpul Dvs.
+                Va puteti baza 24/7 pe serviciile noastre de tractari auto si asistenta rutiera.</p>
+        </div>
+
+        <Faq/>
+
+        <Footer/>
         </>
     )
 }

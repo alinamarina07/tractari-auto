@@ -1,0 +1,43 @@
+.footer {
+    background-color: #333; /* Fundal închis */
+    color: #fff; /* Text alb */
+    text-align: center;
+    padding: 20px 0;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-top: 40px;
+  }
+  
+  /* Conținutul footer-ului */
+  .footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* Stil pentru link-uri */
+  .footer a {
+    color: #007bff; /* Albastru pentru link-uri */
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer a:hover {
+    color: #ffcc00; /* Culoare aurie la hover */
+  }
+  
+  /* Social media links */
+  .social-links {
+    margin-top: 10px;
+  }
+  
+  .social-links a {
+    margin: 0 10px;
+    font-size: 16px;
+    font-weight: bold;
+    display: inline-block;
+  }
+  
+  .social-links a:hover {
+    text-decoration: underline;
+  }

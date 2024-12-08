@@ -11,13 +11,11 @@
     display: flex; /* Utiliză flexbox pentru a alinia elementele orizontal */
     /* justify-content: center; Alinierea elementelor orizontala pe centru */
     /* align-items: center; Alinierea elementelor verticale pe centru */
-    height: 100vh; /* 100% din vizibilitatea ecranului */
+    /* height: 100vh; 100% din vizibilitatea ecranului */
 }
 
 .imgAcasa {
-    text-align: center; /* Aliniază textul în centru */
-    /* padding: 20px; */
-    /* background-image: url('../public/374943075_1031041638343082_6449772257998324000_n.jpg'); Adaugă imaginea */
+    text-align: center;
     background-size: cover; /* Acoperă întreaga suprafață */
     background-position: center; /* Poziționează imaginea în centru */
     background-repeat: no-repeat; /* Fără repetare */
@@ -26,7 +24,7 @@
     /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); Umbră */
     width: 550px; /* Lățime relativă */
     height: 410px; /* Lungime relativă */
-    margin-left: 100px;
+    margin-left: 50px;
 }
 
 .textBox {
@@ -95,7 +93,7 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    text-decoration: none; /* Elimină sublinierea */
+    text-decoration: none;
     padding: 10px 20px;
     margin: 10px;
     border-radius: 8px;
@@ -103,4 +101,37 @@
     font-weight: bold;
     cursor: pointer;
     transition: background-color 0.3s, box-shadow 0.3s;
+    color: var(--color-dark--3);
 }
+
+.call:hover {
+    color: var(--color-light--4);
+    background-color: #007bff;
+}
+
+.text2 {
+    margin-top: 1px;
+    padding: 20px 30px;
+    border-radius: 8px; /* Colțuri rotunjite */
+    margin: 20px auto;
+    max-width: 1200px; /* Lățimea maximă a secțiunii */
+    text-align: left; /* Text aliniat la stânga */
+    font-family: 'Arial', sans-serif; /* Font modern și lizibil */
+  }
+  
+  /* Stil pentru titlul h3 */
+  .text2 h3 {
+    text-align: center;
+    color: var(--color-brand--4); /* Culoare text mai închisă pentru titlu */
+    font-size: 36px; /* Dimensiunea fontului */
+    margin-bottom: 10px; /* Spațiu sub titlu */
+    font-weight: bold; /* Bold pentru impact vizual */
+  }
+  
+  /* Stil pentru paragraful p */
+  .text2 p {
+    text-align: center;
+    font-size: 16px; /* Dimensiunea fontului */
+    line-height: 1.6; /* Spațiu între rânduri pentru o citire ușoară */
+    margin-top: 15px; /* Spațiu între paragraf și titlu */
+  }

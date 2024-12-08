@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhoneSquare} from '@fortawesome/free-solid-svg-icons';
 
 import { FaWhatsapp } from "react-icons/fa"; // Icon WhatsApp
+import { FaEnvelope } from "react-icons/fa"; // Icon Yahoo
 
 
 function Header() {
@@ -35,6 +36,15 @@ return (
             target="_blank"
             rel="noopener noreferrer"><FaWhatsapp className="whatsappIcon" /> Chat: WhatsApp
             </a>
+
+            <a
+        className="yahooButton"
+        href="mailto:Crazy_cappy@yahoo.com?subject=Cerere%20Informatii&body=Salut!%20Doresc%20mai%20multe%20informații."
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <FaEnvelope className="emailIcon" /> Email: Crazy_cappy@yahoo.com
+      </a>
 
         <nav className='menu'>
             <ul>

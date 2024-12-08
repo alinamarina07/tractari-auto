@@ -6,7 +6,7 @@
 :root {
   --color-brand--2: #adc7ce;
   --color-brand--3: #93adb4;
-  --color-brand--4: #6a86a4;
+  --color-brand--4: #607d88;
 
   --color-dark--0: #242a2e;
   --color-dark--1: #2d3439;
@@ -51,9 +51,9 @@ header {
   font-size: 18px;
   font-weight: bold;
   display: inline-block;
-  margin-left: 25px;
   text-transform: uppercase;
   margin-top: 1px;
+  margin-left: 22px;
 } 
 
 .menu ul {
@@ -61,7 +61,7 @@ header {
   /* margin: 0; */
   padding: 0;
   display: flex;
-  margin-right: 150px;
+  margin-right: 50px;
 }
 
 .menu ul li {
@@ -144,13 +144,13 @@ header {
   /* height: 35px; */
 /* } */
 
-.callButton, .cont {
+.callButton, .cont, .yahooButton {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   text-decoration: none; /* Elimină sublinierea */
   padding: 10px 20px;
-  margin: 10px;
+  margin: 30px;
   border-radius: 8px;
   font-size: 16px;
   font-weight: bold;
@@ -161,25 +161,35 @@ header {
 /* Specific stil pentru butonul de apel */
 .callButton {
   color: var(--color-dark--3);
-  border: 2px solid #007BFF;
+  /* border: 2px solid #007BFF; */
 }
 
 .callButton:hover {
   color: var(--color-light--4);
-  background-color: #007bff;
+  /* background-color: #007bff; */
+}
+
+.yahooButton {
+  color: var(--color-dark--3);
+  /* border: 2px solid #ff0000; */
+}
+
+.yahooButton:hover {
+  color: var(--color-light--4);
+  /* background-color: #ff0000; */
 }
 
 .cont {
   color: var(--color-dark--3);
-  border: 2px solid #25D366;
+  /* border: 2px solid #25D366; */
 }
 
 .cont:hover {
   color: var(--color-light--4);
-  background-color: #25d366;
+  /* background-color: #25d366; */
 }
 
-.phoneIcon, .whatsappIcon {
+.phoneIcon, .whatsappIcon, .emailIcon {
   margin-right: 10px;
   font-size: 20px;
 }
