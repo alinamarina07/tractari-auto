@@ -71,13 +71,14 @@ header {
 .menu ul li button {
   display: inline-block;
   padding: 10px 20px;
-  background: var(--color-brand--2);
+  font-size: 1rem;
   color: var(--color-dark--3);
-  text-align: center;
-  text-decoration: none;
+  background-color: var(--color-brand--2);
+  border: none;
   border-radius: 5px;
-  font-size: 16px;
   cursor: pointer;
+  transition: all 0.3s ease;
+  /* transition: background-color 0.3s, box-shadow 0.3s; */
 }
 
 .hamburger {
@@ -96,6 +97,7 @@ header {
 .menu ul li button:hover {
   background: var(--color-brand--3);
   color: var(--color-light--4);
+  transform: scale(1.05);
 }
 
 .logoContainer {
