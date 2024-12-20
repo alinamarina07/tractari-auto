@@ -11,7 +11,7 @@ function HomePage(){
             <Header/>
             <h1 className='titleTractari'>Tractari auto Teleorman. Transport utilaje.</h1>
             <div className='box'>
-            <img src='../public/374943075_1031041638343082_6449772257998324000_n.jpg' className='imgAcasa'></img>
+            <img src='../public/bjn.jpg' className='imgAcasa'></img>
             <div className='textBox'>
             <h1>Ai nevoie de asistenta rutiera?</h1>
             <h4>Da-ne un telefon si venim in cel mai scurt timp!</h4>

@@ -8,10 +8,11 @@
 }
 
 .box {
-    display: flex; /* Utiliză flexbox pentru a alinia elementele orizontal */
-    /* justify-content: center; Alinierea elementelor orizontala pe centru */
-    /* align-items: center; Alinierea elementelor verticale pe centru */
-    /* height: 100vh; 100% din vizibilitatea ecranului */
+    display: flex;
+    flex-wrap: wrap; /* Permite flexbox să se potrivească pe ecrane mai mici */
+    justify-content: center; /* Aliniază elementele pe centru */
+    align-items: center; /* Aliniază elementele vertical */
+    gap: 30px; /* Adaugă un spațiu între elemente */
 }
 
 .imgAcasa {
@@ -135,3 +136,110 @@
     line-height: 1.6; /* Spațiu între rânduri pentru o citire ușoară */
     margin-top: 15px; /* Spațiu între paragraf și titlu */
   }
+
+  
+/* Responsive pentru tablete (lățimi între 768px și 1024px) */
+@media (max-width: 1024px) and (min-width: 768px) {
+    .titleTractari {
+        font-size: 40px;
+        margin-left: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .box {
+        flex-direction: column; /* Poziționează elementele pe verticală pe tablete */
+        justify-content: flex-start;
+        padding: 10px;
+    }
+
+    .imgAcasa {
+        width: 100%;
+        height: 300px;
+        margin-left: 0;
+    }
+
+    .textBox {
+        width: 100%;
+        height: auto;
+    }
+
+    .container {
+        max-width: 90%;
+        padding: 15px;
+    }
+
+    .text2 {
+        padding: 15px 20px;
+    }
+
+    .text2 h3 {
+        font-size: 30px;
+    }
+
+    .text2 p {
+        font-size: 14px;
+    }
+
+    .call {
+        font-size: 20px;
+        padding: 12px 18px;
+    }
+}
+
+/* Responsive pentru telefoane mobile (lățimi sub 768px) */
+@media (max-width: 768px) {
+    .titleTractari {
+        font-size: 28px;
+        margin-left: 10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .box {
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 10px;
+    }
+
+    .imgAcasa {
+        width: 100%;
+        height: 250px;
+        margin-left: 0;
+    }
+
+    .textBox {
+        width: 100%;
+        height: auto;
+    }
+
+    .textBox h1 {
+        font-size: 30px;
+    }
+
+    .textBox h4 {
+        font-size: 20px;
+    }
+
+    .container {
+        padding: 10px;
+        max-width: 100%;
+    }
+
+    .text2 {
+        padding: 10px 15px;
+    }
+
+    .text2 h3 {
+        font-size: 24px;
+    }
+
+    .text2 p {
+        font-size: 12px;
+    }
+
+    .call {
+        font-size: 18px;
+        padding: 10px 15px;
+    }
+}

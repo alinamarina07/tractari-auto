@@ -5,14 +5,13 @@ import Footer from './Footer';
 import { useState } from 'react';
 import axios from 'axios';
 
-
 function ContactSection() {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     date: '',
     time: '',
-    message: ''
+    message: '',
   });
 
   const handleChange = (e) => {
@@ -28,28 +27,14 @@ const handleSubmit = async (e) => {
 
     
     try {
-      // Trimite datele către backend folosind axios
-      // const response = await axios.post('https://your-backend-url.com/api/schedule', formData);
-
-      const response = await axios.post('/api/messages', formData);
-      if (response.status === 200) {
-        // Afișează un mesaj de succes
-        alert('Programarea a fost trimisă cu succes!');
-        setFormData({
-          name: '',
-          email: '',
-          date: '',
-          time: '',
-          message: ''
-        });
-      }
+      // Trimite datele către backend
+      const response = await axios.post('http://localhost:5000/api/schedule', formData);
+      alert('Programare realizată cu succes!');
+      console.log(response.data);
     } catch (error) {
-      // Afișează un mesaj de eroare
-      console.error('Error submitting form:', error);
-      alert('A apărut o eroare la trimiterea programării. Încercați din nou.');
+      console.error('Eroare la trimiterea datelor:', error);
+      alert('A apărut o eroare. Încearcă din nou.');
     }
-    // Aici poți adăuga logica pentru trimiterea datelor
-    console.log('Form submitted', formData);
   };
 
   return (

@@ -14,7 +14,7 @@ function App() {
         <Route path='/acasa' element={<Acasa/>}></Route>
         <Route path='/asistenta-rutiera' element={<AsistentaRutiera/>}></Route>
         <Route path='/contact' element={<Contact/>}></Route>
-        <Route path='/tarife' element={<Acasa/>}></Route>
+        <Route path='/tarife' element={<Tarife/>}></Route>
       </Routes>
     </Router>
   )
