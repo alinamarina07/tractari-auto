@@ -4,19 +4,28 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhoneSquare} from '@fortawesome/free-solid-svg-icons';
 import { FaWhatsapp } from "react-icons/fa";
 import { FaEnvelope } from "react-icons/fa";
-function Header() {
+import { useEffect } from 'react';
+function Header () {
     const [isOpen, setIsOpen] = useState(false);
     const navigate = useNavigate();
 
-    const hamburger = document.querySelector('.hamburger');
-    const menu = document.querySelector('.menu');
-
-    hamburger.addEventListener('click', () => {
-    menu.classList.toggle('active');
-    });
+    useEffect(() => {
+        const hamburger = document.querySelector('.hamburger');
+        if (hamburger) {
+          hamburger.addEventListener('click', () => {
+            console.log('Hamburger clicked!');
+          });
+    
+          return () => {
+            hamburger.removeEventListener('click', () => console.log('Cleanup'));
+          };
+        } else {
+          console.error("Elementul .hamburger nu a fost găsit.");
+        }
+      }, []);
 
     const toggleMenu = () => {
-        setIsOpen((prev) => !prev);
+        setIsOpen(!isOpen);
     };
 
 return (

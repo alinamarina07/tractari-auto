@@ -20,6 +20,12 @@
   --color-light--4: #ffffff;
 }
 
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 header {
   background: var(--color-brand--2);
   color: var(--color-dark--3);
@@ -79,17 +85,23 @@ header {
 }
 
 .hamburger {
-  display: none;
-  cursor: pointer;
+  display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
 }
 
 .hamburger .bar {
   width: 25px;
   height: 3px;
-  background: var(--color-light--2);
+  background: var(--color-dark--3);
   margin: 5px 0;
   transition: 0.4s;
+}
+
+.bar{
+  transition: all 0.3s ease;
+  border-radius: 2px;
 }
 
 .menu ul li button:hover {
@@ -135,7 +147,8 @@ header {
 /* style for tablets */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   header {
-    height: 80px; 
+    height: 90px; 
+    width: 100%;
     justify-content: space-between;
     padding: 0 20px;
   }
@@ -150,78 +163,81 @@ header {
 
   .logo {
     font-size: 14px;
-    margin-top: 0;
+    margin-left: 15px;
   }
 
   .callButtonHeader, .whatsappButtonHeader, .yahooButtonHeader {
-    margin: 15px; /* Spațiu redus */
-    padding: 8px 15px; /* Butoane mai compacte */
-    font-size: 14px; /* Dimensiunea fontului mai mică */
+    margin: 15px;
+    padding: 8px 15px; 
+    font-size: 14px;
   }
 
   .hamburger {
     margin-right: 50px;
-    display: flex; /* Afișăm meniul hamburger */
+    display: flex;
   }
-/* 
+
   .menu {
     display: none;
-  } */
+  }
 
-  /* .menu.active {
+  .menu.active {
     display: flex;
     flex-direction: column; 
     position: absolute;
-    top: 80px;
+    top: 90px;
     left: 0;
     width: 100%;
     background: var(--color-brand--2);
     z-index: 1000;
-  } */
-
-  .menu ul {
-    flex-direction: column;
-    margin-right: 0;
-  }
-
-  .menu ul li {
-    margin: 10px 0; /* Spațiu între elemente */
-    text-align: center;
   }
 }
 
 /* style for phones */
-@media only screen and (max-width: 767px) {
+@media only screen and (min-width: 320px) and (max-width: 767px) {
   header {
-    height: 60px; /* Reducem și mai mult înălțimea header-ului */
-    padding: 0 15px;
+    height: 85px;
+    width: 100%;
+    padding: 0;
+    justify-content: space-between;
   }
 
   .image {
-    width: 60px; /* Reducem dimensiunea imaginii */
+    width: 70px;
   }
 
   .logo {
-    font-size: 12px; /* Font mai mic pentru logo */
-  }
-
-  .menu ul li button {
-    padding: 8px 15px; /* Butoane compacte */
-    font-size: 0.9rem;
+    font-size: 12px;
+    margin-left: 22px;
   }
 
   .callButtonHeader, .whatsappButtonHeader, .yahooButtonHeader {
     font-size: 12px;
-    margin: 10px;
-    padding: 5px 10px;
+    margin: 1px;
+    padding: 5px 1px;
   }
 
   .phoneIcon, .whatsappIcon, .emailIcon {
-    font-size: 16px; /* Icon-uri mai mici */
+    font-size: 16px;
   }
 
-  .hamburger .bar {
-    width: 20px; /* Barele hamburger mai mici */
-    height: 2px;
+  .hamburger {
+    display: flex;
+    margin-right: 20px;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .menu.active {
+    display: flex;
+    flex-direction: column; 
+    position: absolute;
+    top: 85px;
+    left: 1px;
+    width: 100%;
+    background: var(--color-brand--2);
+    z-index: 1000;
   }
 }
