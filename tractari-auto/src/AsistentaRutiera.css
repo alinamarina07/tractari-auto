@@ -22,12 +22,12 @@ section {
     color: #555;
   }
   
-  h1 {
+  /* h1 {
     color: #e74c3c;
     font-size: 2rem;
     text-align: center;
     margin-top: 30px;
-  }
+  } */
   
   table {
     width: 100%;
@@ -54,11 +54,11 @@ section {
     background-color: #f1c40f;
     cursor: pointer;
   }
-  
+/*   
   .highlight {
     color: #e74c3c;
     font-weight: bold;
-  }
+  } */
   
   footer {
     text-align: center;
@@ -68,7 +68,7 @@ section {
     margin-top: 30px;
   }
   
-  .cta-button {
+  /* .cta-button {
     display: inline-block;
     padding: 10px 20px;
     background-color: #e74c3c;
@@ -81,4 +81,4 @@ section {
   
   .cta-button:hover {
     background-color: #c0392b;
-  }
+  } */
