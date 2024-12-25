@@ -1,0 +1,109 @@
+.tarife {
+    padding: 40px;
+    background-color: #f9f9f9;
+    color: #333;
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    color: #007bff;
+    margin-bottom: 30px;
+  }
+  
+  .tarife-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .tarife-info, .servicii-extra {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 45%;
+  }
+  
+  h3 {
+    color: #007bff;
+    margin-bottom: 20px;
+  }
+  
+  .tarife-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .tarife-table th, .tarife-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+  }
+  
+  .tarife-table th {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .servicii-extra ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .servicii-extra li {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+  }
+
+  @media (max-width: 768px) {
+    .tarife-container {
+      flex-direction: column; /* Elemente pe verticală pe ecrane mici */
+      align-items: center;
+    }
+  
+    .tarife-info, .servicii-extra {
+      width: 90%; /* Lățime mai mică pe dispozitive mici */
+      margin-bottom: 20px; /* Adăugăm spațiu între secțiuni */
+    }
+  
+    h2 {
+      font-size: 1.5rem; /* Font mai mic pe ecrane mici */
+      margin-bottom: 20px;
+    }
+  
+    h3 {
+      font-size: 1.2rem; /* Font mai mic pentru subtitluri */
+      margin-bottom: 15px;
+    }
+  
+    .tarife-table th, .tarife-table td {
+      font-size: 0.9rem; /* Micșorăm fontul tabelei */
+      padding: 8px; /* Reducem padding-ul pentru tabel */
+    }
+  
+    .servicii-extra li {
+      font-size: 1rem; /* Font mai mic pentru lista de servicii */
+    }
+  }
+  
+  /* Responsivitate pentru telefoane foarte mici (sub 480px) */
+  @media (max-width: 480px) {
+    h2 {
+      font-size: 1.2rem; /* Font mai mic pentru titluri pe telefoane mici */
+    }
+  
+    .tarife-info, .servicii-extra {
+      width: 100%; /* Fiecare element să ocupe toată lățimea pe telefoane foarte mici */
+    }
+  
+    .tarife-table th, .tarife-table td {
+      font-size: 0.8rem; /* Font și padding mai mici pentru tabele pe ecrane foarte mici */
+      padding: 6px;
+    }
+  
+    .servicii-extra li {
+      font-size: 0.9rem; /* Font și mai mic pentru listă pe ecrane mici */
+    }
+  }

@@ -20,52 +20,51 @@
   --color-light--4: #ffffff;
 }
 
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 header {
   background: var(--color-brand--2);
-  /* padding: 10px 20px; */
   color: var(--color-dark--3);
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  /* display: flex; */
-  /* justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  z-index: 1000;
 }
 
-.img {
-  background-image: url('../public/Logo-Final-SOS-Tractari-Alb-dar-negru.png');
-  background-size: cover;
-  /* background-position: center; */
+.image {
+  width: 100px;
+  height: auto;
+  object-fit: contain;
   background-repeat: no-repeat;
-  /* width: 100px;
-  height: 100px; */
-  margin-top: 10px;
-  margin-left: 30px;
-  width: 130px;
-  height: 70px;
 }
 
 .logo {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: bold;
-  display: inline-block;
+  position: absolute;
+  margin-top: -25px;
+  margin-left: 12px;
   text-transform: uppercase;
-  margin-top: 1px;
-  margin-left: 22px;
 } 
 
 .menu ul {
   list-style: none;
-  /* margin: 0; */
   padding: 0;
   display: flex;
   margin-right: 50px;
 }
 
 .menu ul li {
-  margin-left: 55px;
+  margin-left: 50px;
 }
 
 .menu ul li button {
@@ -78,20 +77,31 @@ header {
   border-radius: 5px;
   cursor: pointer;
   transition: all 0.3s ease;
-  /* transition: background-color 0.3s, box-shadow 0.3s; */
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: 'Manrope', sans-serif;
 }
 
 .hamburger {
-  display: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   cursor: pointer;
 }
 
 .hamburger .bar {
   width: 25px;
   height: 3px;
-  background: var(--color-light--2);
+  background: var(--color-dark--3);
   margin: 5px 0;
   transition: 0.4s;
+}
+
+.bar{
+  transition: all 0.3s ease;
+  border-radius: 2px;
 }
 
 .menu ul li button:hover {
@@ -102,55 +112,15 @@ header {
 
 .logoContainer {
   display: flex;
-  flex-direction: column; /* Aranjare verticală pentru imagine și text */
-  align-items: flex-start; /* Aliniere la stânga */
+  flex-direction: column;
+  align-items: flex-start;
 }
 
-
-/* .hamburger {
-  display: none; /* Ascunde hamburger-ul pe ecrane mari */
-  /* flex-direction: column;
-  cursor: pointer;
-  gap: 5px;
-}
-
-.hamburger .bar {
-  width: 25px;
-  height: 3px;
-  background-color: #000;
-} */ 
-/* 
-.callButton {
-  display: inline-block;
-  background-color: var(--color-brand--2);
-  color: var(--color-dark--3);
-  padding: 10px 20px;
-  border-radius: 5px;
-  text-decoration: none;
-  font-size: 24px;
-  font-weight: bold;
-  text-align: center;
-  transition: background-color 0.3s ease;
-} 
-
-.callButton:hover {
-  display: inline-block;
-  color: var(--color-light--4);
-  cursor: pointer;
-}
-
-.callButton .phoneIcon {
-  margin-right: 10px;
-  /* margin-top: 500px; */
-  /* width: 35px; */
-  /* height: 35px; */
-/* } */
-
-.callButton, .cont, .yahooButton {
+.callButtonHeader, .whatsappButtonHeader, .yahooButtonHeader {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  text-decoration: none; /* Elimină sublinierea */
+  text-decoration: none;
   padding: 10px 20px;
   margin: 30px;
   border-radius: 8px;
@@ -160,38 +130,115 @@ header {
   transition: background-color 0.3s, box-shadow 0.3s;
 }
 
-/* Specific stil pentru butonul de apel */
-.callButton {
+.callButtonHeader, .yahooButtonHeader, .whatsappButtonHeader {
   color: var(--color-dark--3);
-  /* border: 2px solid #007BFF; */
 }
 
-.callButton:hover {
+.callButtonHeader:hover, .yahooButtonHeader:hover, .whatsappButtonHeader:hover {
   color: var(--color-light--4);
-  /* background-color: #007bff; */
-}
-
-.yahooButton {
-  color: var(--color-dark--3);
-  /* border: 2px solid #ff0000; */
-}
-
-.yahooButton:hover {
-  color: var(--color-light--4);
-  /* background-color: #ff0000; */
-}
-
-.cont {
-  color: var(--color-dark--3);
-  /* border: 2px solid #25D366; */
-}
-
-.cont:hover {
-  color: var(--color-light--4);
-  /* background-color: #25d366; */
 }
 
 .phoneIcon, .whatsappIcon, .emailIcon {
   margin-right: 10px;
   font-size: 20px;
+}
+
+
+/* style for tablets */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  header {
+    height: 90px; 
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+
+  .menu ul {
+    margin-right: 10px;
+  }
+
+  .menu ul li {
+    margin-left: 10px; 
+  }
+
+  .logo {
+    font-size: 14px;
+    margin-left: 15px;
+  }
+
+  .callButtonHeader, .whatsappButtonHeader, .yahooButtonHeader {
+    margin: 15px;
+    padding: 8px 15px; 
+    font-size: 14px;
+  }
+
+  .hamburger {
+    margin-right: 50px;
+    display: flex;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .menu.active {
+    display: flex;
+    flex-direction: column; 
+    position: absolute;
+    top: 90px;
+    left: 0;
+    width: 100%;
+    background: var(--color-brand--2);
+    z-index: 1000;
+  }
+}
+
+/* style for phones */
+@media only screen and (max-width: 767px) {
+  header {
+    height: 85px;
+    width: 100%;
+    padding: 0;
+    justify-content: space-between;
+  }
+
+  .image {
+    width: 70px;
+  }
+
+  .logo {
+    font-size: 12px;
+    margin-left: 22px;
+    display: none;
+  }
+
+  .callButtonHeader, .whatsappButtonHeader, .yahooButtonHeader {
+    font-size: 12px;
+    margin: 1px;
+    padding: 5px 1px;
+  }
+
+  .phoneIcon, .whatsappIcon, .emailIcon {
+    font-size: 16px;
+  }
+
+  .hamburger {
+    display: flex;
+    margin-right: 20px;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .menu.active {
+    display: flex;
+    flex-direction: column; 
+    position: absolute;
+    top: 85px;
+    left: 1px;
+    width: 100%;
+    background: var(--color-brand--2);
+    z-index: 1000;
+  }
 }
