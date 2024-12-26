@@ -37,3 +37,17 @@
       object-fit: contain;
     }
   }
+
+  @media (max-width: 767px) {
+    .imageGallery h1 {
+      font-size: 26px; 
+      margin-bottom: 20px;
+      text-align: center; 
+    }
+  
+    .styleImages {
+      justify-content: flex-start; 
+      align-items: flex-start; 
+    }
+
+  }

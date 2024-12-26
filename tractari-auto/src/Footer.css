@@ -38,3 +38,23 @@
 .social-links a:hover {
   text-decoration: underline;
 }
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .footer p {
+      font-size: 12px;
+    }
+  
+    .social-links a {
+      font-size: 14px;
+    }
+  }
+  
+@media (max-width: 768px) {
+  .footer p {
+    font-size: 12px;
+  }
+  
+  .social-links a {
+    font-size: 14px;
+  }
+}

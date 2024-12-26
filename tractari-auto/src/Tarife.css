@@ -5,20 +5,21 @@
     text-align: center;
   }
   
-  h2 {
+h2 {
     font-size: 2rem;
-    color: #007bff;
+    color: var(--color-brand--4);
     margin-bottom: 30px;
+    margin-top: 100px;
   }
   
-  .tarife-container {
+  .tarifeContainer {
     display: flex;
     justify-content: center;
     gap: 30px;
     flex-wrap: wrap;
   }
   
-  .tarife-info, .servicii-extra {
+  .tarifeInfo, .serviciiExtra {
     background-color: white;
     padding: 20px;
     border-radius: 8px;
@@ -27,83 +28,94 @@
   }
   
   h3 {
-    color: #007bff;
+    color: var(--color-brand--4);
     margin-bottom: 20px;
   }
   
-  .tarife-table {
+  .tarifeTable {
     width: 100%;
     border-collapse: collapse;
   }
   
-  .tarife-table th, .tarife-table td {
+  .tarifeTable th, .tarife-table td {
     padding: 10px;
     border: 1px solid #ddd;
     text-align: center;
   }
   
-  .tarife-table th {
-    background-color: #007bff;
+  .tarifeTable th {
+    background-color: var(--color-brand--4);
     color: white;
   }
   
-  .servicii-extra ul {
+  .serviciiExtra ul {
     list-style-type: none;
     padding-left: 0;
   }
   
-  .servicii-extra li {
+  .serviciiExtra li {
     margin-bottom: 10px;
     font-size: 1.1rem;
   }
 
-  @media (max-width: 768px) {
-    .tarife-container {
-      flex-direction: column; /* Elemente pe verticală pe ecrane mici */
-      align-items: center;
-    }
-  
-    .tarife-info, .servicii-extra {
-      width: 90%; /* Lățime mai mică pe dispozitive mici */
-      margin-bottom: 20px; /* Adăugăm spațiu între secțiuni */
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .tarife {
+      padding: 30px;
     }
   
     h2 {
-      font-size: 1.5rem; /* Font mai mic pe ecrane mici */
-      margin-bottom: 20px;
+      font-size: 1.8rem;
+      margin-top: 80px;
     }
   
-    h3 {
-      font-size: 1.2rem; /* Font mai mic pentru subtitluri */
-      margin-bottom: 15px;
+    .tarifeContainer {
+      gap: 20px;
     }
   
-    .tarife-table th, .tarife-table td {
-      font-size: 0.9rem; /* Micșorăm fontul tabelei */
-      padding: 8px; /* Reducem padding-ul pentru tabel */
+    .tarifeInfo,
+    .serviciiExtra {
+      width: 100%;
+      padding: 15px;
     }
   
-    .servicii-extra li {
-      font-size: 1rem; /* Font mai mic pentru lista de servicii */
+    .tarifeTable th, .tarifeTable td {
+      padding: 8px;
+      font-size: 0.9rem;
+    }
+  
+    .serviciiExtra li {
+      font-size: 1rem;
     }
   }
+
+  @media only screen and (max-width: 767px) {
+    .tarife {
+      margin-right: 25px;
+      padding: 20px;
+    }
   
-  /* Responsivitate pentru telefoane foarte mici (sub 480px) */
-  @media (max-width: 480px) {
     h2 {
-      font-size: 1.2rem; /* Font mai mic pentru titluri pe telefoane mici */
+      font-size: 1.6rem;
+      margin-top: 60px;
     }
   
-    .tarife-info, .servicii-extra {
-      width: 100%; /* Fiecare element să ocupe toată lățimea pe telefoane foarte mici */
+    .tarifeContainer {
+      flex-direction: column;
+      gap: 15px;
     }
   
-    .tarife-table th, .tarife-table td {
-      font-size: 0.8rem; /* Font și padding mai mici pentru tabele pe ecrane foarte mici */
-      padding: 6px;
+    .tarifeInfo,
+    .serviciiExtra {
+      width: 100%;
+      padding: 10px; 
     }
   
-    .servicii-extra li {
-      font-size: 0.9rem; /* Font și mai mic pentru listă pe ecrane mici */
+    .tarifeTable th, .tarifeTable td {
+      padding: 6px; 
+      font-size: 0.8rem;
+    }
+  
+    .serviciiExtra li {
+      font-size: 0.9rem;
     }
   }

@@ -1,0 +1,156 @@
+.scheduleForm {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .scheduleForm h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  
+  .formGroup {
+    margin-bottom: 15px;
+    margin-right: 17px;
+  }
+  
+  .formGroup label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  .formGroup input,
+  .formGroup textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .formGroup textarea {
+    resize: vertical;
+    height: 100px;
+  }
+  
+  button {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    background-color: var(--color-brand--2);
+    color: var(--color-dark--4);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: var(--color-brand--3);
+    color: var(--color-light--4);
+  }
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .scheduleForm {
+        width: 100%;
+        /* max-width: 600px; */
+        /* margin: 0 auto; */
+        margin-top: 30px;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        background-color: #fff; 
+      }
+      
+      .scheduleForm h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 24px;
+        color: var(--color-dark--3);
+      }
+      
+      .formGroup {
+        margin-bottom: 15px;
+      }
+      
+      .formGroup label {
+        font-size: 16px;
+        margin-bottom: 5px;
+        display: block;
+        color: var(--color-dark--2);
+      }
+      
+      .formGroup input,
+      .formGroup textarea {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box; /* Asigură un layout consistent */
+        background-color: #f9f9f9;
+        transition: border-color 0.3s ease, box-shadow 0.3s ease;
+      }
+      
+      .formGroup input:focus,
+      .formGroup textarea:focus {
+        border-color: var(--color-brand--2);
+        box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+        outline: none;
+      }
+      
+      .formGroup textarea {
+        resize: vertical;
+        height: 100px;
+      }
+      
+      button {
+        width: 100%;
+        padding: 12px;
+        font-size: 18px;
+        background-color: var(--color-brand--2);
+        color: var(--color-light--1);
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, color 0.3s ease;
+      }
+      
+      button:hover {
+        background-color: var(--color-brand--3);
+        color: var(--color-light--4);
+      }
+    }
+    
+      @media only screen and (max-width: 767px) {
+        .scheduleForm {
+          margin-top: 20px;
+          padding: 15px;
+          box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Umbra mai mică pentru mobile */
+        }
+      
+        .scheduleForm h2 {
+          font-size: 20px; 
+          margin-bottom: 15px;
+        }
+      
+        .formGroup label {
+          font-size: 14px;
+        }
+      
+        .formGroup input,
+        .formGroup textarea {
+          font-size: 14px;
+          padding: 8px;
+        }
+      
+        button {
+          font-size: 16px; 
+          padding: 10px; 
+        }
+      }

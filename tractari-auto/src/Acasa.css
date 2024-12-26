@@ -190,13 +190,11 @@
     }
 }
 
-/* Responsive pentru telefoane mobile (lățimi sub 768px) */
 @media (max-width: 768px) {
     .titleTractari {
-        font-size: 28px;
-        margin-left: 10px;
-        margin-top: 20px;
-        margin-bottom: 20px;
+        font-size: 24px;
+        margin-left: 20px;
+        margin-top: 110px;
     }
 
     .box {
@@ -206,43 +204,39 @@
     }
 
     .imgAcasa {
-        width: 100%;
-        height: 250px;
-        margin-left: 0;
+        width: 70%;
+        height: 300px;
+        margin-left: 20px;
     }
 
-    .textBox {
-        width: 100%;
+    .textBoxAcasa {
+        width: 90%;
         height: auto;
     }
 
-    .textBox h1 {
-        font-size: 30px;
+    .textBoxAcasa h1 {
+        font-size: 32px;
     }
 
-    .textBox h4 {
+    .textBoxAcasa h4 {
         font-size: 20px;
     }
 
-    .container {
+    .containerAcasa {
         padding: 10px;
-        max-width: 100%;
+        max-width: 90%;
     }
 
-    .text2 {
+    .boxTwoAcasa {
         padding: 10px 15px;
+        max-width: 90%;
     }
 
-    .text2 h3 {
+    .boxTwoAcasa h3 {
         font-size: 24px;
     }
 
-    .text2 p {
+    .boxTwoAcasa p {
         font-size: 12px;
-    }
-
-    .call {
-        font-size: 18px;
-        padding: 10px 15px;
     }
 }

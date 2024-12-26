@@ -6,7 +6,7 @@ function AsistentaRutiera () {
     return (
         <>
         <Header/>
-        <section>
+        <section className="asistentaRutiera">
           <h1>
             Pe lângă serviciul de tractări auto, echipa noastră oferă și servicii de
             asistență rutieră și reparații auto, indiferent de locație, oră, moment
@@ -85,7 +85,7 @@ function AsistentaRutiera () {
             </tbody>
           </table>
   
-          <a href="tel:+40123456789" className="cta-button">Sună acum pentru asistență!</a>
+          <a href="tel:+40761866858" className="buttonAsistentaRutiera">Sună acum pentru asistență!</a>
         </section>
   
         <Footer/>

@@ -23,10 +23,10 @@ const TarifeTractari = () => {
     <section className="tarife">
       <h2>Tarife Tractări Auto și Asistență Rutieră</h2>
 
-      <div className="tarife-container">
-        <div className="tarife-info">
+      <div className="tarifeContainer">
+        <div className="tarifeInfo">
           <h3>Servicii Disponibile:</h3>
-          <table className="tarife-table">
+          <table className="tarifeTable">
             <thead>
               <tr>
                 <th>Serviciu</th>
@@ -54,7 +54,7 @@ const TarifeTractari = () => {
           </table>
         </div>
 
-        <div className="servicii-extra">
+        <div className="serviciiExtra">
           <h3>Alte Servicii:</h3>
           <ul>
             <li>Asistență rutieră non-stop</li>
